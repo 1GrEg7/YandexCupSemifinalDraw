@@ -92,7 +92,7 @@ fun upBar(modifier: Modifier, navController: NavController){
                 Icon( painter = painterResource( R.drawable.bin), contentDescription = "",tint = Color.Unspecified)
             }
             IconButton(onClick = {
-                viewModel.addingFramesIsVisible.value = true
+                viewModel.changeAddingFramesIsVisible()
                 viewModel.closeAllMenu()
                 viewModel.deletingVariantsIsVisible.value = false
 //                viewModel.saveFrame()
